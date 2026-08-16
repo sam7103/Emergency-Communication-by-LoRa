@@ -1,0 +1,3 @@
+**LoRa – Off-Grid Emergency Communication System**
+
+LoRa is an off-grid emergency communication system that enables long-range text messaging without cellular networks or internet access. Two ESP32 devices create local Wi-Fi networks for smartphones, while SX1278 LoRa modules provide long-range wireless communication between the ESP32 nodes. Users can access a browser-based chat interface through the ESP32's local IP address and exchange messages over the LoRa link. The system is designed for emergency situations, remote areas, and communication during network outages.
