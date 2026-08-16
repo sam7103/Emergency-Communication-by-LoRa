@@ -1,0 +1,33 @@
+📱 Phone 1
+    │
+    │ Wi-Fi
+    ▼
+📡 ESP32 #1
+    │
+    │ UART/SPI
+    ▼
+📶 LoRa SX1278
+    ))))))  Long Range  ((((((
+📶 LoRa SX1278
+    │
+    ▼
+📡 ESP32 #2
+    │
+    │ Wi-Fi
+    ▼
+📱 Phone 2
+
+
+
+
+The important part is that the phones don't need cellular internet or a mobile network.
+
+ESP32 creates a Wi-Fi network.
+Phone connects to the ESP32's Wi-Fi.
+User opens 192.168.4.1 in a browser.
+ESP32 serves the chat interface.
+A message is sent from Phone 1 → ESP32 #1.
+ESP32 #1 sends the message through LoRa.
+ESP32 #2 receives it.
+ESP32 #2 sends it to Phone 2 through Wi-Fi.
+The message appears in the browser-based chat.
